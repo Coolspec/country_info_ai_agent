@@ -1,0 +1,51 @@
+# Python virtual environments
+venv/
+myenv/
+.env
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest cache
+.pytest_cache/
+
+# Log files
+logs/
+*.log
+
+# Ignore test files globally
+*_test.py
+test_*.py
+*_test_*.py
+test.py
+
+# Include unit_tests anywhere in project
+!**/unit_tests/
+!**/unit_tests/*.py
+
+# Ignore document files
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# Ignore image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.webp
+
+# Ignore text files
+*.txt
+
+# Allow requirements file
+!requirements.txt

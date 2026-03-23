@@ -1,0 +1,55 @@
+fallback_order: ["groq", "cerebras", "google"]
+agent_fallback_order:
+  guardrail: ["cerebras", "groq", "google"]
+  refiner: ["groq", "cerebras", "google"]
+  intent: ["groq", "cerebras", "google"]
+  synthesis: ["groq", "cerebras", "google"]
+
+groq:
+  model: "openai/gpt-oss-120b"
+  temperature: 0
+  guardrail:
+    model: "openai/gpt-oss-safeguard-20b"
+    temperature: 0
+  refiner:
+    model: "openai/gpt-oss-20b"
+    temperature: 0
+  intent:
+    model: "llama-3.3-70b-versatile"
+    temperature: 0.2
+  synthesis:
+    model: "meta-llama/llama-4-scout-17b-16e-instruct"
+    strict: false
+    temperature: 0
+
+cerebras:
+  model: "llama3.1-8b"
+  temperature: 0
+  guardrail:
+    model: "llama3.1-8b"
+    temperature: 0
+  refiner:
+    model: "llama3.1-8b"
+    temperature: 0
+  intent:
+    model: "qwen-3-235b-a22b-instruct-2507"
+    temperature: 0.2
+  synthesis:
+    model: "qwen-3-235b-a22b-instruct-2507"
+    temperature: 0
+
+google:
+  model: "gemini-2.0-flash"
+  temperature: 0
+  guardrail:
+    model: "gemini-2.0-flash"
+    temperature: 0
+  refiner:
+    model: "gemini-2.0-flash"
+    temperature: 0
+  intent:
+    model: "gemini-2.0-flash"
+    temperature: 0
+  synthesis:
+    model: "gemini-2.0-flash"
+    temperature: 0

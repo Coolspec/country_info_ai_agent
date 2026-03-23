@@ -1,0 +1,11 @@
+fastapi
+langchain
+langchain-core
+langchain-cerebras
+langchain-google-genai
+langchain-groq
+langchain-openai
+langgraph
+PyYAML
+python-dotenv
+uvicorn
